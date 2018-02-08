@@ -29,7 +29,7 @@ class Now(WeatherBase):
 
     @property
     def temp_f(self):
-        return self.extract_value(['temp_f'])
+        return self.extract_value(['temp_c'])
 
     @property
     def temp_c(self):
@@ -59,7 +59,7 @@ class Historical(WeatherBase):
 
     @property
     def high_avg_temp_f(self):
-        return self.extract_value(['temp_high','normal','F'])
+        return self.extract_value(['temp_high','normal','C'])
 
     @property
     def high_avg_temp_c(self):
@@ -67,7 +67,7 @@ class Historical(WeatherBase):
 
     @property
     def low_avg_temp_f(self):
-        return self.extract_value(['temp_low','normal','F'])
+        return self.extract_value(['temp_low','normal','C'])
 
     @property
     def low_avg_temp_c(self):
